@@ -1,0 +1,39 @@
+$mainColor: #eacda3;
+$secondaryColor: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    list-style: none;
+}
+
+::-moz-selection {
+    color: $mainColor;
+    background: $secondaryColor;
+}
+  
+::selection {
+    color: $mainColor;
+    background: $secondaryColor;
+}
+  
+html{
+    scrollbar-width: thin;
+    scrollbar-color: $mainColor $secondaryColor;
+}
+  
+html::-webkit-scrollbar{
+    width: 10px;
+}
+  
+html::-webkit-scrollbar-thumb{
+    background-color: $mainColor;
+    border-radius: 50px;
+}
+  
+html::-webkit-scrollbar-track{
+    background-color: $secondaryColor;
+}

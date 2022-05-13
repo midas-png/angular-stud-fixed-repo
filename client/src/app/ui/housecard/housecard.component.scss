@@ -1,0 +1,65 @@
+.housecard_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    gap: 5px;
+    height: 100%;
+    width: 100%;
+    -webkit-box-shadow: 9px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 9px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 9px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: transform 0.5s;
+}
+
+.housecard_wrapper:hover{
+    transform: scale(1.05);
+}
+
+.price_favorite_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-heart{
+    cursor: pointer;
+}
+
+a{
+    color: #000;
+}
+
+.info_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+}
+
+.finishing_wrapper{
+    display: flex;
+    gap: 5px;
+}
+
+.buttons_wrapper{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+hr{
+    background: #000;
+    height: 2.5px;
+    width: 70%;
+    border: none;
+    border-radius: 2px;
+}
+
+img{
+    background: #fff;
+    border-radius: 10px 10px 0 0;;
+    height: 100%;
+    width: 100%;
+}

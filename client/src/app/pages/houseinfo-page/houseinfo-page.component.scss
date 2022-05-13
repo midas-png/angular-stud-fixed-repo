@@ -1,0 +1,114 @@
+$primaryGradient: linear-gradient(214deg, rgba(234,205,163,1) 35%, rgb(192, 160, 121) 100%);
+
+.houseinfo_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    gap: 30px;
+    min-height: 100vh;
+    background: $primaryGradient;
+}
+
+.info_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: #fff;
+    padding-bottom: 20px;
+    min-height: 700px;
+    width: 70%;
+    border-radius: 50px;
+}
+
+.main_image{
+    height: 70%;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+}
+
+.images_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.secondary_images{
+    width: 80%;
+    display: flex;
+    gap: 20px;
+}
+
+.secondary_image{
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+}
+
+.functional_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 73%;
+}
+
+.buttons_wrapper{
+    gap: 10px;
+    display: flex;
+}
+
+.house_price{
+    font-size: 25px;
+}
+
+.description_wrapper{
+    width: 73%;
+}
+
+.description{
+    font-size: 17px;
+}
+
+.data_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px;
+    align-items: center;
+}
+
+.data_table{
+    min-height: 300px;
+    width: 100%;
+}
+
+.data_unit{
+    display: grid;
+    grid-template-columns: 30% 10px 30%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.vertical_line{
+    background: #000;
+    border-radius: 1px;
+    width: 1.5px;
+    height: 25px;
+}
+
+h1{
+    color: #fff;
+}
+
+hr{
+    background: #000;
+    height: 2.5px;
+    width: 30%;
+    border: none;
+    border-radius: 2px;
+}

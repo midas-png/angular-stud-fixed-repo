@@ -1,0 +1,40 @@
+$primaryGradient: linear-gradient(214deg, rgba(234,205,163,1) 35%, rgb(192, 160, 121) 100%);
+$primaryColor: #fff;
+
+button{
+    padding: 10px 20px;
+    font-size: 19px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: 2px solid rgb(192, 160, 121);
+}
+
+.button_styles{
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.button_styles:hover{
+    background: $primaryColor;
+    color: #000;
+}
+
+.primary{
+    outline: none;
+    background: $primaryGradient;
+}
+
+.primary:hover{
+    background: $primaryColor;
+}
+
+.small{
+    padding: 7px 5px;
+    font-size: 12px;
+}
+
+.dark{
+    color: #000;
+}

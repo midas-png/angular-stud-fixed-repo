@@ -1,0 +1,39 @@
+<div class="account_wrapper">
+    <div *ngIf="isUserAdmin" class="admin_wrapper">
+        <div class="content_wrapper">
+            <h2>Add Property</h2>
+            <div class="adding_window">
+                <div class="images_wrapper">
+                    <input 
+                        type="file" 
+                        id="input_image" 
+                        name="addImage" 
+                        accept="image/jpeg, image/jpg" 
+                        (change)="addImage($event)"
+                    />
+                    <label for="input_image" class="input_image_label">Add a Picture</label>
+                    <div class="under_images_wrapper">
+                        <img src="{{image}}" class="under_image" alt="" *ngFor="let image of addedImages"/>
+                    </div>
+                </div>
+                <div class="data_wrapper">
+                    <div class="inputs_wrapper">
+                        <app-input [classifyer]="'title'" [text]="'Title'" (keyup)="changeValue($event, 'title')"></app-input>
+                        <app-input [classifyer]="'price'" [text]="'Price'" (keyup)="changeValue($event, 'price')"></app-input>
+                        <app-input [classifyer]="'city'" [text]="'City'" (keyup)="changeValue($event, 'city')"></app-input>
+                        <app-input [classifyer]="'description'" [text]="'Desciption'" (keyup)="changeValue($event, 'description')"></app-input>
+                        <app-input [classifyer]="'furnished'" [text]="'Furnished'" (keyup)="changeValue($event, 'furnished')"></app-input>
+                        <app-input [classifyer]="'squareMeters'" [text]="'Square Meters'" (keyup)="changeValue($event, 'squareMeters')"></app-input>
+                        <app-input [classifyer]="'bedrooms'" [text]="'Bedrooms'" (keyup)="changeValue($event, 'bedrooms')"></app-input>
+                        <app-input [classifyer]="'bathrooms'" [text]="'Bathrooms'" (keyup)="changeValue($event, 'bathrooms')"></app-input>
+                    </div>
+                    <div class="buttons_wrapper">
+                        <app-button [isPrimary]="false" [text]="'Clear Images'" [isFontDark]="true" (click)="clearImages()"></app-button>
+                        <app-button [isPrimary]="true" [text]="'Upload'" (click)="uploadProperty()"></app-button>
+                    </div>
+                    <span class="response_error" *ngIf="responseError">{{responseError}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

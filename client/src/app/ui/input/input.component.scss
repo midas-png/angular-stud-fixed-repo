@@ -1,0 +1,57 @@
+@keyframes shake {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(2em);
+    }
+    40% {
+      transform: translate(-2em);
+    }
+    60% {
+      transform: translate(2em);
+    }
+    80% {
+      transform: translate(-2em);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+.input_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 100%;
+    width: 100%;
+}
+
+.content_wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input.ng-invalid.ng-touched{
+    animation: shake 0.5s;
+}
+
+label{
+    cursor: pointer;
+}
+
+input{
+    border: 1px solid #c0c0c0;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+span{
+    color: #f00;
+}

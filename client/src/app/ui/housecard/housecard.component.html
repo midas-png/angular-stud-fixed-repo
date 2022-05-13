@@ -1,0 +1,20 @@
+<div class="housecard_wrapper">
+    <a [routerLink]="['/search', houseInfo.id]">
+        <img [src]="getImage(houseInfo.imageURL[0])" >
+    </a>
+    <div class="info_wrapper">
+        <div class="price_favorite_wrapper">
+            <span>{{houseInfo.price}}$</span>
+            <i [ngClass]="getClass(houseInfo.id)" (click)="handleClick(houseInfo.id)"></i>
+        </div>
+        <div class="finishing_wrapper">
+            <span>sqm {{houseInfo.squareMeters}} ·</span>
+            <span>bed {{houseInfo.bedrooms}} ·</span>
+            <span>bath {{houseInfo.bathrooms}}</span>
+        </div>
+        <span>{{houseInfo.city}}, {{houseInfo.exactAddress}}</span>
+    </div>
+    <div class="buttons_wrapper">
+        <app-button [isPrimary]="true" [text]="'Add to cart'" [isSmall]="true"></app-button>
+    </div>
+</div>
