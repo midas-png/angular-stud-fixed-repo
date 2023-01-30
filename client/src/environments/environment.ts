@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  baseURL: 'http://localhost:7000',
+  baseURL: 'https://angular-stud-fixed-repo-production.up.railway.app',
   apiURL: '/api/v1',
 };
